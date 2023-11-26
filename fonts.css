@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "indieFlower";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("/fonts/IndieFlower-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "jsMath-cmti10";
+  font-style: oblique;
+  font-weight: 800;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("/fonts/jsMath-cmti10.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "IM FELL Great Primer SC";
+  font-style: oblique;
+  font-weight: 800;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("/fonts/IMFellGreatPrimerSC-Regular.ttf") format("truetype");
+}
+
