@@ -81,7 +81,7 @@ h1{
    margin-top: -10px; 
    font-family: indieFlower;
    font-size: 80px;
-   font-size: calc(16px + 3vw);
+   font-size: calc(20px + 3vw);
    font-style: normal;
    font-weight: 400;
    line-height: normal;
@@ -95,7 +95,7 @@ h1{
    color: #7E7E7E;
    font-family: IM FELL Great Primer SC;
    font-size:40px;
-   font-size: calc(18px + 1vw);
+   font-size: calc(16px + 1vw);
    font-style: normal;
    font-weight: 400;
    line-height: normal;
