@@ -3,8 +3,10 @@ body{
    display: flex;
    align-items: center;
    flex-direction: column;
-   overflow: hidden;
+  
    user-select: none;
+   overflow-x: auto;
+   overflow-y: auto;
   
   
 }
@@ -16,13 +18,16 @@ section{
    display: flex;
    background-color: transparent;
    width: 100%;
-   height: 80vh;
+   height: fit-content;
+   height: 90vh;
+   
+
 }
 
 .contact-column{
    /* height: 80vh; */
    width: 10%;
-   min-width: 100px;
+   min-width: 140px;
    background-color: transparent;
    display: flex;
    gap: 20px;
@@ -41,8 +46,12 @@ section{
 }
 
 .image-container-column{
-   width: 45%;
+   width: 35%;
+  
    background-color: transparent; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
   
 }
@@ -67,6 +76,8 @@ section{
 color: #7E7E7E;
 font-family: indieFlower;
 font-size: 40px;
+font-size: calc(16px + 1vw);
+
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -79,6 +90,8 @@ margin: 0px;
 margin-top: -10px; 
 font-family: indieFlower;
 font-size: 80px;
+font-size: calc(16px + 3vw);
+
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -92,6 +105,7 @@ background-clip: text;
 color: #7E7E7E;
 font-family: IM FELL Great Primer SC;
 font-size:40px;
+font-size: calc(18px + 1vw);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -137,11 +151,12 @@ align-items: center;
       display: flex;
       justify-content: center;
       align-items: end;
-      background-color: transparent;
-      width: 600px;
+      background-color: blue;
+      width: 100%;
+      max-width: 600px;
    }
 .profile-image{
-      width: 700px;
+      width: 100%;
 }
 
 
@@ -149,16 +164,81 @@ align-items: center;
 
    
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 700px) {
    section{
-     
+      margin-top: 20px;
       height: auto;
    }
    .image-container-column{
-      height: 500px;
+      height: auto;
    }
    
    }
 @media only screen and (min-width:701px) {
    
    }
+
+
+
+@media only screen and (max-width: 1200px) {
+
+section{
+         flex-direction: column-reverse;
+         align-items: center;
+         justify-content: center;
+         gap: 0px;
+         background-color: transparent;
+         height: auto;
+       
+}
+
+
+      .welcome-column{
+         margin-top: 50px;
+         width: 80%;
+      
+      }
+
+      .hey{
+         margin-top: -15px;
+         }
+
+      .image-container-column{
+         margin-top: 50px;
+         width: 90%;
+         max-width: 500px;
+         background-color: transparent; 
+   }
+
+   .contact-column{
+      margin-top: 30px;
+      /* height: 80vh; */
+      width: 100%;
+      min-width: 50px;
+      background-color: transparent;
+      display: flex;
+      gap: 20px;
+      flex-direction: row;
+      justify-content: center;
+ 
+   }
+
+   .github-button{
+      width: 70px;
+      height: 60px;
+   }
+   .call-button{
+      height:  60px;
+      width: 40px;
+   }
+   .mail-button{
+      height:  60px;
+      width: 40px;
+   }
+   
+   
+
+}
+   @media only screen and (min-width:701px) {
+      
+      }
