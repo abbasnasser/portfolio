@@ -3,15 +3,10 @@ body{
    display: flex;
    align-items: center;
    flex-direction: column;
-  
    user-select: none;
    overflow-x: auto;
-   overflow-y: auto;
-  
-  
+   overflow-y: auto; 
 }
-
-
 
 
 section{
@@ -20,12 +15,11 @@ section{
    width: 100%;
    height: fit-content;
    height: 90vh;
-   
-
 }
 
+
+
 .contact-column{
-   /* height: 80vh; */
    width: 10%;
    min-width: 140px;
    background-color: transparent;
@@ -47,13 +41,10 @@ section{
 
 .image-container-column{
    width: 35%;
-  
    background-color: transparent; 
    display: flex;
    justify-content: center;
-   align-items: center;
-
-  
+   align-items: center; 
 }
 
 
@@ -72,56 +63,51 @@ section{
    width: 100px;
 }
 
-.hey{
-color: #7E7E7E;
-font-family: indieFlower;
-font-size: 40px;
-font-size: calc(16px + 1vw);
 
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.hey{
+   color: #7E7E7E;
+   font-family: indieFlower;
+   font-size: 40px;
+   font-size: calc(16px + 1vw);
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
 }
 
-
-
 h1{
-margin: 0px;
-margin-top: -10px; 
-font-family: indieFlower;
-font-size: 80px;
-font-size: calc(16px + 3vw);
-
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: linear-gradient(90deg, #FF02B8 8.45%, #050FFF 46.87%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+   margin: 0px;
+   margin-top: -10px; 
+   font-family: indieFlower;
+   font-size: 80px;
+   font-size: calc(16px + 3vw);
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   background: linear-gradient(90deg, #FF02B8 8.45%, #050FFF 46.87%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 .description{
-color: #7E7E7E;
-font-family: IM FELL Great Primer SC;
-font-size:40px;
-font-size: calc(18px + 1vw);
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+   color: #7E7E7E;
+   font-family: IM FELL Great Primer SC;
+   font-size:40px;
+   font-size: calc(18px + 1vw);
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
 }
 
 .learnmore{
-height: 45px;
-width: 180px;
-
-border-radius: 10px;
-background: #FFF;
-
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-display: flex;
-justify-content: center;
-align-items: center;
+   height: 45px;
+   width: 180px;
+   border-radius: 10px;
+   background: #FFF;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 
@@ -141,8 +127,7 @@ align-items: center;
    bottom: -120px;
    display: flex;
    justify-content: start;
- 
-   }
+ }
 
 .image-cont{
       position: absolute;
@@ -155,6 +140,7 @@ align-items: center;
       width: 100%;
       max-width: 600px;
    }
+
 .profile-image{
       width: 100%;
 }
@@ -165,63 +151,61 @@ align-items: center;
    
 
 @media only screen and (max-height: 700px) {
+
    section{
       margin-top: 20px;
       height: auto;
    }
+
    .image-container-column{
       height: auto;
    }
    
-   }
+}
+
 @media only screen and (min-width:701px) {
-   
-   }
+}
 
 
 
 @media only screen and (max-width: 1200px) {
 
 section{
-         flex-direction: column-reverse;
-         align-items: center;
-         justify-content: center;
-         gap: 0px;
-         background-color: transparent;
-         height: auto;
-       
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+   gap: 0px;
+   background-color: transparent;
+   height: auto;       
 }
 
 
-      .welcome-column{
-         margin-top: 50px;
-         width: 80%;
-      
-      }
+.welcome-column{
+   margin-top: 50px;
+   width: 80%;
+}
 
-      .hey{
-         margin-top: -15px;
-         }
+.hey{
+   margin-top: -15px;
+}
 
-      .image-container-column{
-         margin-top: 10px;
-         width: 90%;
-         max-width: 500px;
-         background-color: transparent; 
-   }
+.image-container-column{
+   margin-top: 10px;
+   width: 90%;
+   max-width: 500px;
+   background-color: transparent; 
+}
 
-   .contact-column{
-      margin-top: 30px;
-      /* height: 80vh; */
-      width: 100%;
-      min-width: 50px;
-      background-color: transparent;
-      display: flex;
-      gap: 20px;
-      flex-direction: row;
-      justify-content: center;
- 
-   }
+.contact-column{
+   margin-top: 30px;
+   width: 100%;
+   min-width: 50px;
+   background-color: transparent;
+   display: flex;
+   gap: 20px;
+   flex-direction: row;
+   justify-content: center;
+ }
 
    .github-button{
       width: 70px;
@@ -239,6 +223,6 @@ section{
    
 
 }
-   @media only screen and (min-width:701px) {
-      
-      }
+
+@media only screen and (min-width:701px) {
+}
