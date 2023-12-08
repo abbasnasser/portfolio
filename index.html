@@ -16,10 +16,48 @@
         }
     </style>
 
+<script>
+    function translatePage() {
+
+        console.log('elleo');
+        
+      // Replace 'YOUR_API_KEY' with your actual Google Translate API key
+      const apiKey = 'YOUR_API_KEY';
+      const targetElement = document.getElementById('desc');
+      const originalText = targetElement.innerText;
+
+      // Make a request to Google Translate API
+      fetch(`https://translation.googleapis.com/language/translate/v2?key=${apiKey}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          q: originalText,
+          source: 'en',  // Source language (English)
+          target: 'ar',  // Target language (Spanish)
+        }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Update the content with the translated text
+        const translatedText = data.data.translations[0].translatedText;
+        targetElement.innerText = translatedText;
+      })
+      .catch(error => {
+        console.error('Error translating:', error);
+      });
+    }
+  </script>
+
+
 </head>
+
+
 <body>
  <!-- header -->
 <header>
+    <button onclick="translatePage()">click</button>
 
 <div class="header-left">
 <img class="logo"  src="./public/images/google.svg" alt="" srcset="">
@@ -35,9 +73,9 @@
 
 <div  class="header-right">
 <ul class="lang-menu">
-<li class="main-menu-items"><a href="">ARB</a></li>
-<li class="main-menu-items"><a href="">FRE</a></li>
-<li class="main-menu-items"><a href="" class="selected-menu-item">ENG</a></li>
+<li class="main-menu-items"><a class="lang-a" href="">ARB</a></li>
+<li class="main-menu-items"><a class="lang-a" href="">FRE</a></li>
+<li class="main-menu-items"><a class="lang-a" href="" class="selected-menu-item">ENG</a></li>
 </ul>
 
 <div class="menu-button">
@@ -48,6 +86,8 @@
 </div>
 
 </header>  
+
+
 
 
 <section>
@@ -63,7 +103,7 @@
 <div class="welcome-column">
     <p class="hey">Hey There!</p>
     <h1 >I AM ABBAS NASSER</h1>
-    <p class="description">A Full Stack Developer - UI UX Designer and a Registered Nurse</p>
+    <p class="description" id="desc">A Full Stack Developer - UI UX Designer and a Registered Nurse</p>
     <div class="learnmore">
         <a  href="">learn more</a>
     </div>
@@ -89,4 +129,7 @@
 
     
 </body>
+
+
+    
 </html>

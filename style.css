@@ -61,6 +61,19 @@ section{
   
 }
 
+.circle-container-column{
+   position: fixed;
+   top:  -200px;
+   height: 140vh;
+   min-height: 1000px;
+
+   width: 40%;
+   right: -250px;
+   display: flex;
+   justify-content: center;
+
+}
+
 /* .circle-container-column{
    width: 90%;
    height: 100vh;

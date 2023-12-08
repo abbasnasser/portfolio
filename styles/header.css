@@ -63,11 +63,21 @@ color: #EF34BB;
  
  }
 
+ .lang-a{
+    user-select: none;
+text-decoration: none;
+color: rgb(214, 214, 214);
+z-index: 8;
+
+ }
+
 .menu-button{
 display: flex;
 justify-content: end;
 background-color: transparent;
 height: 40px;
+z-index: 7;
+
 }
 
 
