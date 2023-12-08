@@ -1,11 +1,16 @@
+html,body{
+
+}
+
+
 body{
    margin: 0px;
    display: flex;
    align-items: center;
    flex-direction: column;
    user-select: none;
-   overflow-x: auto;
-   overflow-y: auto; 
+  
+   /* overflow: hidden; */
 }
 
 
@@ -13,10 +18,11 @@ section{
    display: flex;
    background-color: transparent;
    width: 100%;
-   height: fit-content;
+ 
+
    height: 90vh;
-   overflow: hidden;
-   
+   /* overflow-y: scroll;  */
+ 
 }
 
 
@@ -38,18 +44,39 @@ section{
    display: flex;
    flex-direction: column;
    justify-content: center;
+   z-index: 3;
    
 }
 
 .image-container-column{
-   width: 35%;
+   width: 100%;
    background-color: transparent; 
    display: flex;
    justify-content: center;
    align-items: center; 
- 
+   min-width: 30px;
+   max-width: 700px;
+   padding-right: 20px;
+   z-index:1;
   
 }
+
+/* .circle-container-column{
+   width: 90%;
+   height: 100vh;
+   background-color: transparent; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   min-width: 400px;
+  position: absolute;
+  right: -700px;
+
+  z-index: 0;
+
+
+} */
 
 
 
@@ -147,10 +174,7 @@ h1{
    }
 
 .profile-image{
-      width: 150%;
-      position: relative;
-      right: -170px;
-      bottom: -100px;
+      width: 100%;
 }
 
 
@@ -163,11 +187,14 @@ h1{
    section{
       margin-top: 20px;
       height: auto;
+   
    }
 
    .image-container-column{
       height: auto;
    }
+
+ 
    
 }
 
@@ -176,7 +203,9 @@ h1{
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
+
+ 
 
 section{
    flex-direction: column-reverse;
@@ -184,14 +213,10 @@ section{
    justify-content: center;
    gap: 0px;
    background-color: transparent;
-   height: auto;       
+   /* height: auto;      */
+  
 }
-.profile-image{
-   width: 150%;
-   position: relative;
-   right: -80px;
-   bottom: -50px;
-}
+
 
 .welcome-column{
    margin-top: 50px;
@@ -207,7 +232,19 @@ section{
    width: 90%;
    max-width: 500px;
    background-color: transparent; 
+   padding-right: 0px;
+     
+
 }
+/* 
+.circle-container-column{
+   
+   right: -500px;
+ 
+ 
+ 
+ 
+ } */
 
 .contact-column{
    margin-top: 30px;
@@ -237,5 +274,17 @@ section{
 
 }
 
-@media only screen and (min-width:701px) {
+@media only screen and (min-width:1000px) {
+
+   
+.image-container-column{
+
+   padding-right: 0px;
+  
+}
+
+
+
+
+
 }
