@@ -8,6 +8,47 @@
     <link rel="stylesheet" href="fonts.css"> 
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/i18next@22.4.3/dist/umd/i18next.min.js"></script>
+
+    <!-- <script >
+
+      
+
+   i18next.init({
+      lng: 'en',
+      resources: {
+        en: {
+          translation: {
+            'Hello, world!': 'Hello, world!',
+          },
+        },
+        es: {
+          translation: {
+            'Hello, world!': '¡Hola, mundo!',
+          },
+        },
+        ar: {
+          translation: {
+            'A Full Stack Developer - UI UX Designer and a Registered Nurse': ' مطور Full Stack - مصمم UI UX وممرض مسجلة',
+          },
+        },
+      },
+    });
+
+    function translateText() {
+
+      console.log('asdasd');
+      
+
+      const textToTranslate = document.getElementById('desc').innerText;
+
+      i18next.changeLanguage('ar', (err, t) => {
+        const translatedText = t(textToTranslate);
+        alert(`Translated Text: ${translatedText}`);
+        // You can update the DOM with the translated text as needed
+      });
+    }
+    </script> -->
     <style> 
         .selected-menu-item{
             /* border-bottom: 0.5px solid #EF34BB; */
@@ -15,40 +56,12 @@
 
         }
     </style>
+   
 
-<script>
-    function translatePage() {
 
-        console.log('elleo');
-        
-      // Replace 'YOUR_API_KEY' with your actual Google Translate API key
-      const apiKey = 'YOUR_API_KEY';
-      const targetElement = document.getElementById('desc');
-      const originalText = targetElement.innerText;
 
-      // Make a request to Google Translate API
-      fetch(`https://translation.googleapis.com/language/translate/v2?key=${apiKey}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          q: originalText,
-          source: 'en',  // Source language (English)
-          target: 'ar',  // Target language (Spanish)
-        }),
-      })
-      .then(response => response.json())
-      .then(data => {
-        // Update the content with the translated text
-        const translatedText = data.data.translations[0].translatedText;
-        targetElement.innerText = translatedText;
-      })
-      .catch(error => {
-        console.error('Error translating:', error);
-      });
-    }
-  </script>
+
+
 
 
 </head>
@@ -71,6 +84,7 @@
 <li class="main-menu-items" ><a href="">portfolio</a></li>
  </ul>
 </div>
+<!-- <button onclick="translateText()">sadfasda</button> -->
 
 <div  class="header-right">
 <ul class="lang-menu">
